@@ -1,5 +1,6 @@
 import React from 'react';
-import { ScrollView, StyleSheet, Text } from 'react-native';
+import { Image, ScrollView, StyleSheet, Text } from 'react-native';
+import Veggies from '../assets/images/Veggies.png';
 
 export default class PendingScreen extends React.Component {
   static navigationOptions = {
@@ -9,7 +10,8 @@ export default class PendingScreen extends React.Component {
   render() {
     return (
       <ScrollView style={styles.container}>
-        <Text>[Pending Screen]</Text>
+        <Image source={Veggies} style={styles.image} />
+        <Text>[Pending]</Text>
       </ScrollView>
     );
   }
@@ -20,5 +22,9 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingTop: 15,
     backgroundColor: '#f7efec',
+  },
+  image: {
+    width: 375,
+    height: 89,
   },
 });
