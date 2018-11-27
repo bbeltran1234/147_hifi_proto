@@ -1,7 +1,18 @@
 {
-  "name": "medfi",
-  "main": "node_modules/expo/AppEntry.js",
+  "name": "meal-match-prototype",
+  "version": "0.0.1",
+  "license": "MIT",
+  "description": "High fidelity prototype for CS 147",
+  "keywords": ["React", "React-Native", "Expo"],
+  "contributors": [
+    {
+      "name": "Ryan Keller",
+      "email": "rykeller@uw.edu",
+      "url": "https://rykeller.com"
+    }
+  ],
   "private": true,
+  "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
