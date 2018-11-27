@@ -19,6 +19,13 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     paddingTop: 15,
-    backgroundColor: '#fff',
+    backgroundColor: '#f7efec',
+  }, 
+  rectangle: {
+    width: 375,
+    height: 812,
+    backgroundColor: '#f7efec',
   },
 });
+
+

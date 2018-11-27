@@ -3,7 +3,11 @@
   "version": "0.0.1",
   "license": "MIT",
   "description": "High fidelity prototype for CS 147",
-  "keywords": ["React", "React-Native", "Expo"],
+  "keywords": [
+    "React",
+    "React-Native",
+    "Expo"
+  ],
   "contributors": [
     {
       "name": "Ryan Keller",
@@ -28,7 +32,8 @@
     "expo": "^31.0.2",
     "react": "16.5.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-31.0.0.tar.gz",
-    "react-navigation": "^2.18.2"
+    "react-navigation": "^2.18.2",
+    "styled-components": "^4.1.1"
   },
   "devDependencies": {
     "babel-preset-expo": "^5.0.0",
