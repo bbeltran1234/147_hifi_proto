@@ -22,16 +22,16 @@ MeStack.navigationOptions = {
   )
 }
 
-const AlertsStack = createStackNavigator({ Alerts: AlertsScreen })
-AlertsStack.navigationOptions = {
-  tabBarLabel: 'Alerts',
-  tabBarIcon: ({ focused }) => (
-    <TabBarIcon
-      focused={focused}
-      name={Platform.OS === 'ios' ? 'ios-mail' : 'md-mail'}
-    />
-  )
-}
+// const AlertsStack = createStackNavigator({ Alerts: AlertsScreen })
+// AlertsStack.navigationOptions = {
+//   tabBarLabel: 'Alerts',
+//   tabBarIcon: ({ focused }) => (
+//     <TabBarIcon
+//       focused={focused}
+//       name={Platform.OS === 'ios' ? 'ios-mail' : 'md-mail'}
+//     />
+//   )
+// }
 
 const PendingStack = createStackNavigator({ Pending: PendingScreen })
 PendingStack.navigationOptions = {
@@ -57,7 +57,7 @@ DiscoverStack.navigationOptions = {
 
 export default createBottomTabNavigator({
   MeStack,
-  AlertsStack,
+  // AlertsStack,
   PendingStack,
   DiscoverStack
 })
