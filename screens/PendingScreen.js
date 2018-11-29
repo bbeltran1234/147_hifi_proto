@@ -2,15 +2,39 @@ import React from 'react';
 import { View, Image, ScrollView, StyleSheet, Text } from 'react-native';
 import Veggies from '../assets/images/Veggies.png';
 
+
+class HeaderBar extends React.Component {
+  render() {
+    return (
+      <Image
+        source={Veggies}
+        style={StyleSheet.absoluteFill, { backgroundColor: 'transparent' }} blurRadius={5}
+      />
+    );
+  
+  }
+}
+
+// const ImageHeader = props => (
+
+// );
+
 export default class PendingScreen extends React.Component {
   static navigationOptions = {
-    title: 'Pending',
+    title: 'pending',
+    headerTitle: <HeaderBar />,
+    // headerStyle: {
+    //   backgroundColor: '#f4511e',
+    // },
+    // headerTintColor: '#fff',
+    // headerTitleStyle: {
+    //   fontWeight: 'bold',
+    // },
   };
 
  render() {
     return (
       <ScrollView style={styles.container}>
-        <Image source={Veggies} style={styles.image} blurRadius={5}/>
         <Text>[Pending]</Text>
       </ScrollView>
     );
@@ -37,3 +61,13 @@ const styles = StyleSheet.create({
     opacity: 0.9,
   }
 });
+
+// const ImageHeader = props => (
+//   <View style={{ backgroundColor: '#eee' }}>
+//     <Image
+//       style={StyleSheet.absoluteFill}
+//       source={Veggies}
+//     />
+//     <Header {...props} style={{ backgroundColor: 'transparent' }}/>
+//   </View>
+// );
