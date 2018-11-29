@@ -11,7 +11,6 @@ class HeaderBar extends React.Component {
         style={StyleSheet.absoluteFill, { backgroundColor: 'transparent' }} blurRadius={5}
       />
     );
-  
   }
 }
 
@@ -21,15 +20,18 @@ class HeaderBar extends React.Component {
 
 export default class PendingScreen extends React.Component {
   static navigationOptions = {
-    title: 'pending',
-    headerTitle: <HeaderBar />,
-    // headerStyle: {
-    //   backgroundColor: '#f4511e',
-    // },
-    // headerTintColor: '#fff',
-    // headerTitleStyle: {
-    //   fontWeight: 'bold',
-    // },
+    title: 'Pending',
+    titleStyle: 
+    {
+      color: '#FFFFFF',
+      fontSize: '30',
+    },
+    headerTintColor: 'white',
+    headerBackground: (         
+      <Image
+        source={Veggies}
+        style={{ backgroundColor: 'transparent' , flex: 1, height: 70 }} blurRadius={5}
+      />)
   };
 
  render() {

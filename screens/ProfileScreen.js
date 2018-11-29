@@ -1,9 +1,21 @@
 import React from 'react';
-import { ScrollView, StyleSheet, Text } from 'react-native';
+import { View, Image, ScrollView, StyleSheet, Text } from 'react-native';
+import Veggies from '../assets/images/Veggies.png';
 
 export default class ProfileScreen extends React.Component {
   static navigationOptions = {
-    title: 'Profile',
+    title: 'Your Profile',
+    titleStyle: 
+    {
+      color: '#FFFFFF',
+      fontSize: '30',
+    },
+    headerTintColor: 'white',
+    headerBackground: (         
+      <Image
+        source={Veggies}
+        style={{ backgroundColor: 'transparent' , flex: 1, height: 70 }} blurRadius={5}
+      />)
   };
 
   render() {
